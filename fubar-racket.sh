@@ -17,8 +17,6 @@ while read line
 do
     if [ ${count} -eq ${SONG} ]; then
       mpsyt .${line}, 1 &
-      #wait
-      #mpsyt q
     fi
     let count=$count+1
 done <out.txt
